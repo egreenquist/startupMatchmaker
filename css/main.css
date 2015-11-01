@@ -1,0 +1,193 @@
+/* HACKS
+
+Global Overrides aka Dave's recommended hacks 
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* 
+
+FONTS
+
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+
+*/
+
+
+body {
+	background-color: #E1EBE6;
+	font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	width:100%;
+	background-color: #3B3A3A;
+	border-bottom-style: solid;
+	border-bottom-width: 15px;
+	border-bottom-color: #FAD246;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+header h1 {
+	float: left;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 30px;
+	width: 30%;
+	margin: 0px;
+	color: white;
+} 
+
+header nav {
+	float: right;
+	width:60%;
+}
+header nav h2 {
+	margin: 0px;
+	padding: 0px;
+}
+header nav a {
+	color: white;
+}
+header nav a:hover {
+	color: grey;
+}
+header nav div {
+	display: inline-block;
+}
+header nav #mainOptions a {
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+header nav #mainOptions a:hover {
+	color: grey;
+}
+
+#tagLine p {
+	font-style: italic;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: black;
+	font-size: 18px;
+	padding-top: 20px;
+	margin-top: 0px;
+}
+
+#bigImage {
+	width: 100%;
+	height: 600px;
+	background-bottom: 0px;
+	background-position: relative;
+	background: url(../images/coworking.jpg) no-repeat;
+}
+#bigImage > div {
+	border: 1px solid black;
+	float: right;
+	width: 30%;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	background-color: rgba(255, 255, 255, 0.6);
+  	padding: 50px;
+  	margin-right: 50px;
+}
+#bigImage button {
+	background-color: #F74748;
+}
+
+button {
+	border-radius: 4px;
+  	text-align: center;
+  	margin: 0 auto;
+  	width: 100%;
+  	font-family: 'Oswald', sans-serif;
+  	font-size: 10px;
+}
+button a:hover {
+	color: grey;
+}
+button a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#bigImage button a {
+	color: white;
+}
+#bigImage button a:hover {
+	color: grey;
+}
+#options button a, #options button a:hover {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+#options {
+	clear: both;
+	background-color: white;
+}
+#options h4{
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+
+}
+#options > div {
+	width: 33%;
+	float: left;
+	margin-left: 0.5%;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-left: 1px solid gray;
+}
+#options > div:first-of-type {
+	margin-left: 0;
+	border-left: 0px solid gray;
+
+}
+#options > div button {
+	background-color: #E2EBE7;
+}
+#options button a:hover {
+	color:gray;
+}
+
+footer p {
+	background-color: #3B3A3A;
+	color: white;
+	padding: 20px;
+	margin: 0px;
+}
+
+
+
+
+
+/*
+Background hint from Dave 
+
+body{
+	background: url(../images/coworking.jpg) no-repeat;
+}
+
+*/
